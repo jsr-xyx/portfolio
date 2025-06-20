@@ -21,6 +21,9 @@ if page == "🏠 Home":
     if st.button("📂 View Projects"):
         st.session_state.page = "📂 Projects"
 
+    if st.button("👤 About me"):
+        st.session_state.page = "👤 About"
+
     if st.button("📫 Contact Me"):
         st.session_state.page = "📫 Contact"
 
