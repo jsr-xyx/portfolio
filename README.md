@@ -4,7 +4,7 @@ This is my personal portfolio website built with **Python** and **Streamlit**.
 
 ## 🌐 Live Demo
 
-[👉 Click here to view the live app](https://your-link.streamlit.app)
+[👉 Click here to view the live app](https://yunxuan-portfolio.streamlit.app)
 
 ## 📁 What's Inside
 
