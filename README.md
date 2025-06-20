@@ -12,9 +12,3 @@ This is my personal portfolio website built with **Python** and **Streamlit**.
 - Projects section with screenshots
 - About Me page
 - Contact links
-
-## Run It Locally
-
-```bash
-pip install -r requirements.txt
-streamlit run app.py
