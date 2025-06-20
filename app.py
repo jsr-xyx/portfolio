@@ -8,7 +8,7 @@ if "page" not in st.session_state:
 st.set_page_config(page_title="Yunxuan (Jesse) Xue | Portfolio", layout="wide")
 
 # Sidebar navigation based on state
-page = st.sidebar.radio("Go to:", ["🏠 Home", "📂 Projects", "👤 About", "📫 Contact", "🥏 Ultimate Tracker"], index=["🏠 Home", "📂 Projects", "👤 About", "📫 Contact", "🥏 Ultimate Tracker"].index(st.session_state.page))
+page = st.sidebar.radio("Go to:", ["🏠 Home", "📂 Projects", "👤 About", "📫 Contact"], index=["🏠 Home", "📂 Projects", "👤 About", "📫 Contact"].index(st.session_state.page))
 
 # Pages
 if page == "🏠 Home":
@@ -30,6 +30,3 @@ elif page == "👤 About":
 
 elif page == "📫 Contact":
     contact.show()
-
-elif page == "🥏 Ultimate Tracker":
-    tracker.show()
