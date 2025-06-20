@@ -1,23 +1,30 @@
-def show():
-    import streamlit as st
+import streamlit as st
 
+def show():
     st.title("📂 Projects")
 
-    # === Project 1 ===
+    # === Project 1: Ultimate Stats Tracker ===
     st.subheader("🥏 Ultimate Stats Tracker")
-    st.image("images/tracker_screenshot.png", use_column_width=True)
+
     st.write("""
-    A personal stats tracker I built to analyze my performance in Ultimate Frisbee games.
-    
-    It logs goals, assists, turnovers, and visualizes performance trends with pandas and Altair.  
-    This was a fun way to combine my passion for data with the sport I love.
+    A personal app I built to track and analyze my Ultimate Frisbee performance.
+
+    It logs game-by-game stats like goals, assists, turnovers, Ds, OB pulls, and more.  
+    I also calculate plus/minus, pull success %, and visualize trends with Altair.  
+    The app supports CSV export, filtering, and full stat reset — all built in Python and Streamlit.
     """)
 
+    # GitHub link to the tracker project repo
     st.markdown(
-        '<a href="https://yunxuan-portfolio.streamlit.app" target="_blank">🔗 Live Demo</a>',
+        '<a href="https://github.com/jsr-xyx/ultimate-tracker" target="_blank">📂 View GitHub Repo</a>',
         unsafe_allow_html=True
     )
+
+    # Link to open tracker as a separate Streamlit app
     st.markdown(
-        '<a href="https://github.com/jsr-xyx/ultimate-tracker" target="_blank">📂 GitHub Repo</a>',
+        '<a href="https://your-tracker-url.streamlit.app" target="_blank">🚀 Open Ultimate Tracker</a>',
         unsafe_allow_html=True
     )
+
+    st.markdown("---")
+    st.caption("More projects coming soon.")
