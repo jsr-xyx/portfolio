@@ -7,5 +7,5 @@ def show():
     A personal stats tracker I built to analyze performance in Ultimate Frisbee games.
     Built in Python using Streamlit and pandas. Tracks goals, throws, turnovers and visualizes trends.
     """)
-    st.markdown("[🔗 Live Demo]()")
+    st.markdown("[🔗 Live Demo](https://yunxuan-portfolio.streamlit.app)")
     st.markdown("[📂 GitHub Repo](https://github.com/jsr-xyx/ultimate-tracker)")
