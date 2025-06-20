@@ -1,16 +1,18 @@
 import streamlit as st
-import about, projects, contact, tracker
+import about, projects, contact
 
-# Initialize state
+# Initialize session state for navigation
 if "page" not in st.session_state:
     st.session_state.page = "🏠 Home"
 
 st.set_page_config(page_title="Yunxuan (Jesse) Xue | Portfolio", layout="wide")
 
-# Sidebar navigation based on state
-page = st.sidebar.radio("Go to:", ["🏠 Home", "📂 Projects", "👤 About", "📫 Contact"], index=["🏠 Home", "📂 Projects", "👤 About", "📫 Contact"].index(st.session_state.page))
+# Sidebar navigation
+pages = ["🏠 Home", "📂 Projects", "👤 About", "📫 Contact"]
+page = st.sidebar.radio("Go to:", pages, index=pages.index(st.session_state.page))
+st.session_state.page = page  # Keep state in sync
 
-# Pages
+# Page rendering logic
 if page == "🏠 Home":
     st.title("Yunxuan (Jesse) Xue")
     st.subheader("Economics Student | Stats Enthusiast")
