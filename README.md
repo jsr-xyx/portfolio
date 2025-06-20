@@ -12,7 +12,6 @@ This is my personal portfolio website built with **Python** and **Streamlit**.
 - 📂 Projects section with screenshots
 - 👤 About Me page
 - 📫 Contact links
-- 🥏 Ultimate Frisbee Stats Tracker
 
 ## 🚀 Run It Locally
 
