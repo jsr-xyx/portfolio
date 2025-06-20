@@ -22,7 +22,7 @@ def show():
 
     # Link to open tracker as a separate Streamlit app
     st.markdown(
-        '<a href="https://your-tracker-url.streamlit.app" target="_blank">🚀 Open Ultimate Tracker</a>',
+        '<a href="https://ultimate-tracker.streamlit.app" target="_blank">🚀 Open Ultimate Tracker</a>',
         unsafe_allow_html=True
     )
 
